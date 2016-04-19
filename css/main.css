@@ -1,0 +1,7 @@
+body {
+  counter-reset: book-counter;
+}
+td.contador::before{
+  counter-increment: book-counter;
+  content: counter(book-counter);
+}
